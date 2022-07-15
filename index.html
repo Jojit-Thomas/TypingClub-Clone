@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jojit Thomas">
+    <meta name="description" content="200 Days Challlenge to learn Coding | TypingClub-Clone | 3rd Project">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script async src="https://cdn.splitbee.io/sb.js"></script>
+    <title>Learn Touch Typing Free - TypingClub</title>
+    <link rel="shortcut icon" type="image/png" href="./images/Title-Image.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-transparent w-100 position-absolute p-2"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand text-white fw-bolder fs-3" href="#"
+          >TypingClub</a
+        >
+        <button
+          class="navbar-toggler"
+          style="width: 50px"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon" style="width: 25px">
+            <img
+              style="border: none"
+              src="./images/hamburger.svg"
+              alt="Not Found"
+            />
+          </span>
+        </button>
+        <div
+          class="collapse navbar-collapse align-middle"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item m-auto mx-2">
+              <a class="nav-link active text-white" aria-current="page" href="#"
+                >Get Started</a
+              >
+            </li>
+            <li class="nav-item m-auto mx-2">
+              <a class="nav-link text-white" href="#">School Edition</a>
+            </li>
+            <li class="nav-item m-auto mx-2">
+              <a class="nav-link text-white" href="#">Store</a>
+            </li>
+            <li class="nav-item dropdown text-white m-auto mx-2">
+              <a
+                class="nav-link dropdown-toggle text-white"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Language
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item text-dark" href="#">Deutsch</a></li>
+                <li><a class="dropdown-item text-dark" href="#">Español</a></li>
+                <li>
+                  <a class="dropdown-item text-dark" href="#">Français</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-dark" href="#">Português</a>
+                </li>
+                <li><a class="dropdown-item text-dark" href="#">中文</a></li>
+                <li><a class="dropdown-item text-dark" href="#">Русский</a></li>
+                <li>
+                  <a class="dropdown-item text-dark" href="#">Slovenčina</a>
+                </li>
+                <li><hr class="dropdown-divider text-dark" /></li>
+                <li>
+                  <a class="dropdown-item text-dark" href="#">Dvorak typing</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-dark" href="#"
+                    >One hand typing</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item m-auto mx-2">
+              <a class="nav-link" href="#"
+                ><button
+                  class="btn btn-sm bg-white rounded-pill px-3"
+                  type="button"
+                >
+                  Login
+                </button></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="home" class="home d-flex flex-column">
+      <div
+        class="container-fluid my-auto h-40 w-75 d-flex justify-content-between"
+      >
+        <img class="moon" src="./images/moon.webp" alt="Not Found" />
+        <div class="typeWriter text-white text-start w-50">
+          <h1>Learn Touch Typing<span id="typing"></span> <span class="cursor">&nbsp;</span></h1>
+          <a href="#">
+            <button type="button" class="btn btn-light px-5 py-2 mt-4">
+              Get Started
+            </button>
+          </a>
+        </div>
+      </div>
+      <div class="cloud1 clouds position-absolute container-fluid"></div>
+      <div class="cloud2 clouds position-absolute container-fluid"></div>
+      <div class="cloud3 clouds position-absolute container-fluid"></div>
+    </section>
+    <section class="container mt-5 pt-5 opacity d-flex justify-content-center">
+      <div class="row col-md-12 col-lg-10 col-xl-8">
+        <div class="col-sm-12 col-md-6">
+          <div>
+            <img
+              style="height: auto; width:400px"
+              src="./images/typingclubImage.webp"
+              class="img-fluid hidePicture"
+              alt="Not Found"
+            />
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 pb-5">
+          <h6 class="text-muted text-uppercase">What is TypingClub?</h6>
+          <h3>
+            TypingClub is the most effective way to learn how to type.
+          </h3>
+          <p class="lead m-b-md">
+            It is web based and highly effective. TypingClub is (and will always
+            be) free for both individuals and schools. There is an optional paid
+            school edition.
+          </p>
+
+          <a class="btn btn-primary get_started2" href="/get-started/"
+            >Get Started Now</a
+          >
+          <br />
+        </div>
+      </div>
+    </section>
+    <div class="banner container-fluid opacity">
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-sm-4 col-12">
+            <div class="row-fluid">
+              <div class="col-md-4 col-sm-5 col-12">
+                <div class="ribbon-icon">
+                  <i class="demo-icon icon-eddie-student"></i>
+                </div>
+              </div>
+              <div
+                class="col-md-12 col-sm-7 col-7 text-white font2 p-3 text-center"
+              >
+                <div class="fs-3 font1">23 million<span>+</span></div>
+                Students
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 col-12">
+            <div class="row-fluid">
+              <div class="col-md-4 col-sm-5 col-12">
+                <div class="ribbon-icon">
+                  <i class="demo-icon icon-eddie-district"></i>
+                </div>
+              </div>
+              <div
+                class="col-md-12 col-sm-7 col-7 text-white font2 p-3 text-center"
+              >
+                <div class="fs-3 font1">50,000<span>+</span></div>
+                Schools &amp; Districts
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 col-12">
+            <div class="row-fluid">
+              <div class="col-md-4 col-sm-5 col-12">
+                <div class="ribbon-icon">
+                  <i class="demo-icon icon-eddie-teacher"></i>
+                </div>
+              </div>
+              <div
+                class="col-md-12 col-sm-7 col-7 text-white font2 p-3 text-center"
+              >
+                <div class="fs-3 font1">300,000<span>+</span></div>
+                Teachers
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="container-fluid bg-light opacity">
+      <div class="faq container">
+        <div class="row">
+          <div class="col-12 col-md-4 offset-md-1">
+            <h3>How Does it Work?</h3>
+            <p>
+              Keep practicing each lesson until you get all five stars. It
+              really doesn't take much to learn, a few minutes a day for one to
+              two weeks and you will be a pro!
+            </p>
+          </div>
+          <div class="col-12 col-md-4 offset-md-2">
+            <h3 class="fs-2">Do I need an account?</h3>
+            <p>
+              You do not need to create an account. However, as you go through
+              the lessons, you can create an optional profile in order to save
+              your progress.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="inTypingClub container opacity">
+      <div class="row col-lg-4 offset-lg-4 pt-5">
+        <h6 class="text-muted text-uppercase text-center pt-5">
+          Inside TypingClub
+        </h6>
+        <h3 class="m-t-0 m-b text-center">
+          All the reasons to start learning how to type right now
+        </h3>
+      </div>
+      <div class="cards row pt-5 col-sm-12 col-lg-10 offset-lg-1">
+        <div class="col-12 col-lg-4 col-md-4">
+          <img
+            class="mx-auto d-block pt-4 pb-3 px-2 img-fluid"
+            src="./images/In Typing Club/stars.svg"
+            width="180px"
+            alt="Not Found"
+          />
+          <p class="text-center">
+            <strong>It's a game.</strong> An engaging and interactive experience
+            while you are learning how to type.
+          </p>
+        </div>
+        <div class="col-12 col-lg-4 col-md-4 px-4">
+          <img
+            class="mx-auto d-block pb-3 img-fluid"
+            src="./images/In Typing Club/keyboard.svg"
+            width="170px"
+            alt="Not Found"
+          />
+          <p class="text-center">
+            <strong>Proper hand posture guide.</strong> Will show you the
+            correct hand posture on every key as you type.
+          </p>
+        </div>
+        <div class="col-12 col-lg-4 col-md-4 px-5">
+          <img
+            class="mx-auto d-block pb-3 img-fluid"
+            src="./images/In Typing Club/award.svg"
+            width="90px"
+            alt="Not Found"
+          />
+          <p class="text-center">
+            <strong>Levels, Badges and Stars.</strong> All the reasons to keep
+            you going, and build your muscle memory.
+          </p>
+        </div>
+      </div>
+      <!-- 2nd row -->
+      <div class="cards row pt-5 col-sm-12 col-lg-10 offset-lg-1">
+        <div class="col-12 col-lg-4 col-md-4">
+          <img
+            class="mx-auto d-block pt-4 pb-3 px-2 img-fluid"
+            src="./images/In Typing Club/man.svg"
+            width="80px"
+            alt="Not Found"
+          />
+          <p class="text-center">
+            <strong>Accessibility.</strong> TypingClub is the most accessible
+            typing program available.
+          </p>
+        </div>
+        <div class="col-12 col-lg-4 col-md-4 px-4">
+          <img
+            class="mx-auto d-block pb-3 img-fluid"
+            src="./images/In Typing Club/mediaPlayer.svg"
+            width="120px"
+            alt="Not Found"
+          />
+          <p class="text-center">
+            <strong>Interactive experience.</strong> A full range of experiences
+            from games, videos and different typing challenges makes learning
+            fun.
+          </p>
+        </div>
+        <div class="col-12 col-lg-4 col-md-4 px-5">
+          <img
+            class="mx-auto d-block pb-5 img-fluid"
+            src="./images/In Typing Club/speaker.svg"
+            width="100px"
+            alt="Not Found"
+          />
+          <p class="text-center">
+            <strong>Voice over.</strong> Once you turn it on, every word is read
+            out loud as you are typing each word.
+          </p>
+        </div>
+      </div>
+      <!-- 3rd row -->
+      <div class="cards row pt-5 col-sm-12 col-lg-10 offset-lg-1">
+        <div class="col-12 col-lg-4 col-md-4">
+          <img
+            class="mx-auto d-block pt-4 pb-3 px-2 img-fluid"
+            src="./images/In Typing Club/play.png"
+            width="80px"
+            alt="Not Found"
+          />
+          <p class="text-center">
+            <strong>Typing Playback.</strong> You can view your past
+            performances and even play them back.
+          </p>
+        </div>
+        <div class="col-12 col-lg-4 col-md-4 px-4">
+          <img
+            class="mx-auto d-block pb-3 img-fluid"
+            src="./images/In Typing Club/google.png"
+            width="200px"
+            alt="Not Found"
+          />
+          <p class="text-center">
+            <strong>Google for Education Partner.</strong> TypingClub is a
+            Google for Education Partner.
+          </p>
+        </div>
+        <div class="col-12 col-lg-4 col-md-4 px-5">
+          <img
+            class="mx-auto d-block pb-3 img-fluid"
+            src="./images/In Typing Club/keyboard.png"
+            width="100px"
+            alt="Not Found"
+          />
+          <p class="text-center">
+            <strong>100% Online.</strong> All you need is a keyboard and a web
+            browser
+          </p>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center p-3">
+        <button class="btn btn-primary text-white col-sm-2">Get Started</button>
+      </div>
+    </section>
+    <section class="container-fluid cyanBlue opacity">
+      <div class="container">
+        <div class="row col-lg-4 offset-lg-4 pt-5">
+          <h6 class="text-muted text-uppercase text-center pt-5">
+            more lesson plans
+          </h6>
+        </div>
+        <div
+          class="cards row pt-5 col-sm-12 col-lg-10 offset-lg-1 border-bottom"
+        >
+          <div class="col-12 col-lg-4 col-md-4 pe-4">
+            <img
+              class="mx-auto d-block pb-3 img-fluid"
+              src="./images/lessons/dvorak.png"
+              width="100%"
+              alt="Not Found"
+            />
+            <h3 class="textBlue">Dvoark</h3>
+            <p>
+              Typing lesson plan for a standard Dvorak keyboard from beginner to
+              advanced. Includes games, videos and other interactive lessons.
+              <a href="#">Learn more.</a>
+            </p>
+          </div>
+          <div class="col-12 col-lg-4 col-md-4">
+            <img
+              class="mx-auto d-block pb-3 img-fluid"
+              src="./images/lessons/typingForKids.png"
+              width="100%"
+              alt="Not Found"
+            />
+            <h3 class="textBlue">Typing for Kids</h3>
+            <p>
+              Typing lesson plan for a standard Dvorak keyboard from beginner to
+              advanced. Includes games, videos and other interactive lessons.
+              <a href="#">Learn more.</a>
+            </p>
+          </div>
+          <div class="col-12 col-lg-4 col-md-4">
+            <img
+              class="mx-auto d-block pb-3 img-fluid"
+              src="./images/lessons/leftAndRight.png"
+              width="100%"
+              alt="Not Found"
+            />
+            <h3 class="textBlue">Left and Right Hand</h3>
+            <p>
+              Typing lesson plan for a standard Dvorak keyboard from beginner to
+              advanced. Includes games, videos and other interactive lessons.
+              <a href="#">Learn more.</a>
+            </p>
+          </div>
+        </div>
+        <div class="row col-lg-4 offset-lg-4 pt-4">
+          <h6 class="text-muted text-uppercase text-center">
+            animated story typing series
+          </h6>
+        </div>
+        <div
+          class="cards row pt-5 col-sm-12 col-lg-10 offset-lg-1 border-bottom"
+        >
+          <div class="col-12 col-lg-4 col-md-4 pe-4">
+            <img
+              class="mx-auto d-block pb-3 img-fluid"
+              src="./images/lessons/goingsolo.png"
+              width="100%"
+              alt="Not Found"
+            />
+            <h3 class="textBlue">Going Solo</h3>
+            <p>
+              Lauren is nervous before her bif flight test. Join her and her
+              helpful friend on a journey to find the confidence she needs to go
+              solo.
+              <a href="#">Learn more.</a>
+            </p>
+          </div>
+          <div class="col-12 col-lg-4 col-md-4">
+            <img
+              class="mx-auto d-block pb-3 img-fluid"
+              src="./images/lessons/avarabbit.png"
+              width="100%"
+              alt="Not Found"
+            />
+            <h3 class="textBlue">Ava & the Rabbit</h3>
+            <p>
+              Travel with Ava on a magical adventure as she explores her
+              mysterious friend's world, and learns more about her own in the
+              process.
+              <a href="#">Learn more.</a>
+            </p>
+          </div>
+          <div class="col-12 col-lg-4 col-md-4">
+            <img
+              class="mx-auto d-block pb-3 img-fluid"
+              src="./images/lessons/perfect-match.png"
+              width="100%"
+              alt="Not Found"
+            />
+            <h3 class="textBlue">Perfect Match</h3>
+            <p>
+              Join Alex on an out-of-this world journey as he helps his
+              mysterious new friend get back home.
+              <a href="#">Learn more.</a>
+            </p>
+          </div>
+        </div>
+        <div class="row col-lg-4 offset-lg-4 pt-4">
+          <h6 class="text-muted text-uppercase text-center">language series</h6>
+        </div>
+        <div class="cards row pt-5 col-sm-12 col-lg-10 offset-lg-1">
+          <div class="col-12 col-lg-4 col-md-4 pe-4">
+            <img
+              class="mx-auto d-block pb-3 img-fluid"
+              src="./images/lessons/spanish.png"
+              width="100%"
+              alt="Not Found"
+            />
+            <h3 class="textBlue">Spanish</h3>
+            <p>
+              Students can learn touch typing with hundreds of lessons in
+              Spanish, including games, videos and the entire student experience
+              in Spanish.
+              <a href="#">Learn more.</a>
+            </p>
+          </div>
+          <div class="col-12 col-lg-4 col-md-4">
+            <img
+              class="mx-auto d-block pb-3 img-fluid"
+              src="./images/lessons/french.png"
+              width="100%"
+              alt="Not Found"
+            />
+            <h3 class="textBlue">French</h3>
+            <p>
+              Students can learn touch typing with hundreds of lessons in
+              French, including games, videos and the entire student experience
+              in French.
+              <a href="#">Learn more.</a>
+            </p>
+          </div>
+          <div class="col-12 col-lg-4 col-md-4">
+            <img
+              class="mx-auto d-block pb-3 img-fluid"
+              src="./images/lessons/german.png"
+              width="100%"
+              alt="Not Found"
+            />
+            <h3 class="textBlue">German</h3>
+            <p>
+              Students can learn touch typing with hundreds of lessons in
+              German, including games, videos and the entire student experience
+              in German.
+              <a href="#">Learn more.</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid cyanBlue border">
+      <div class="row col-lg-4 offset-lg-4 p-3">
+        <span
+          style="font: 15px; font-weight: lighter"
+          class="text-muted text-center align-middle"
+          >For a full list of languages,<a class="textBlue" href="#"
+            >visit our lesson plan catlog.</a
+          ></span
+        >
+      </div>
+    </section>
+    <section class="container-fluid cyanBlue pb-5 opacity">
+      <div class="row">
+        <img
+          class="img-fluid mx-auto d-block img-fluid"
+          src="./images/vocabulary.png"
+          style="width: 400px"
+          alt="Not Found"
+        />
+      </div>
+      <div class="row">
+        <div
+          class="text-center col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4"
+        >
+          <h3 style="font-weight: lighter">
+            Introducing a whole new
+            <a href="#">Spelling & Vocabulary lesson plan series </a>for grades
+            3-8.
+            <a href="#">Check it out here</a>
+          </h3>
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid blueCharcol">
+      <div class="container">
+        <div class="row col-lg-10 offset-lg-1 padding justify-content-center">
+          <div class="col-sm-4 pt-3">
+            <img
+              class="img-fluid"
+              style="width: 250px"
+              src="./images/district.svg"
+              alt="Not Found"
+            />
+          </div>
+          <div class="col-sm-8 pt-5">
+            <h6 class="text-muted text-uppercase">The amazing</h6>
+            <h3 class="text-light">TypingClub School Edition</h3>
+            <p class="lead text-muted">
+              TypingClub School Edition is the most powerful and popular
+              software used by teachers, schools and districts.
+            </p>
+            <a
+              href="#"
+              class="btn btn-default btn-lg btn-borderless bg-white px-5"
+              >Learn more</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid blueGradient opacity py-4">
+      <div class="container p-5 my-5">
+        <div class="row">
+          <h6 class="text-muted text-uppercase text-center">
+            new release and product announcement
+          </h6>
+        </div>
+        <div class="row pb-4">
+          <h3 class="text-white text-center">Subscribe to recieve updates</h3>
+        </div>
+        <div class="row blur rounded p-4 col-md-8 offset-md-2">
+          <div class="col-md-12 row justify-content-around">
+            <div class="col-md-9 col-12 py-1">
+              <input
+                type="email"
+                placeholder="Your email address"
+                class="form-control"
+              />
+            </div>
+            <div class="col-md-3 col-12 py-1">
+              <button type="submit" class="btn btn-primary w-100">
+                subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid">
+      <div class="container py-5">
+        <div class="row">
+          <h6 class="text-muted text-uppercase text-center">
+            50,000+ schools and districts
+          </h6>
+        </div>
+        <div class="row pb-4 justify-content-center">
+          <h3 class="col-md-4 text-center">
+            Some of the districts that use TypingClub
+          </h3>
+        </div>
+        <div class="col-md-8 offset-md-2">
+          <img
+            class="img-fluid"
+            src="./images/district-logos.png"
+            alt="Not Found"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid cyanBlue">
+      <div class="container p-5">
+        <h6 class="text-muted text-uppercase text-center p-5">
+          typingclub on twitter
+        </h6>
+      </div>
+    </section>
+    <footer style="font-size: 80%" class="container-fluid blueCharcol">
+      <div class="container col-md-8 offset-md-2">
+        <div class="row padding">
+          <div class="col-sm-4 padding">
+            <h6 class="text-white text-uppercase">© TypingClub - 2011-2022</h6>
+            <span class="text-muted px-15"
+              >1701 Pennsylvania Ave. NW, Suite 200 <br />Washington, DC
+              20006</span
+            >
+            <hr class="text-white" />
+            <span class="text-muted px-15"
+              >If you have any questions about the program, you may reach out to
+              us at
+              <a class="text-white" href="#">support@typingclub.com</a>.</span
+            >
+          </div>
+          <div class="col-sm-4 padding">
+            <h6 class="text-white text-uppercase">contact</h6>
+            <span class="text-muted px-15"
+              ><a class="text-white" href="#">support@typingclub.com</a
+              ><br />Phone: 202-609-9919 <br
+            /></span>
+            <span class="text-muted px-15"
+              >Toll Free: 1-800-701-8895 <br />Fax: 1-240-772-5885</span
+            >
+          </div>
+          <div class="col-sm-3 padding">
+            <a class="text-white" href="#">Privacy Policy <br /></a>
+            <a class="text-white" href="#">Terms of Service <br /></a>
+            <a class="text-white" href="#">School Edition <br /></a>
+            <a class="text-white" href="#">Find Your School <br /></a>
+            <a class="text-white" href="#">Tutorials <br /></a>
+            <a class="text-white" href="#">Individual <br /></a>
+            <a class="text-white" href="#">Premium Edition <br /></a>
+            <a class="text-white" href="#">About us <br /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var i = 0;
+      var txt = " For Free!";
+      var speed = 50;
+        typeWriter();
+      function typeWriter() {
+        if (i < txt.length) {
+          document.getElementById("typing").innerHTML += txt.charAt(i);
+          i++;
+          setTimeout(typeWriter, 300);
+        }
+      }
+    </script>
+  </body>
+</html>

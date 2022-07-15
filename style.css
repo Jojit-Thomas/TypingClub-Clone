@@ -1,0 +1,248 @@
+
+@font-face {
+  font-family: font1;
+  src: url("./fonts/font1.woff2");
+}
+
+@font-face {
+  font-family: font2;
+  src: url("./fonts/font2.woff2");
+}
+
+@media only screen and (max-width: 992px) {
+  .moon {
+    display: none;
+  }
+  .typeWriter {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .faq {
+    padding: 35px 15px;
+  }
+
+  .hidePicture {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 210px) {
+  * {
+    font-size: 50% !important;
+    padding: 0px !important;
+  }
+  .p-5 {
+    padding: 0px !important;
+  }
+  .btn {
+    width: 20%;
+    padding: 0px !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .faq {
+    padding: 100px 0;
+  }
+
+  .inTypingClub .cards div {
+    padding: 2%;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .padding {
+    padding: 2rem !important;
+  }
+}
+
+@keyframes moon {
+  0% {
+    width: 200px;
+  }
+
+  25% {
+    width: 205px;
+  }
+
+  50% {
+    width: 200px;
+  }
+
+  75% {
+    width: 205px;
+  }
+
+  100% {
+    width: 200px;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    background-position: 0;
+  }
+
+  100% {
+    background-position: -1190px;
+  }
+}
+
+@keyframes marqueeCloud3 {
+  0% {
+    background-position: 0;
+  }
+
+  100% {
+    background-position: -1190px;
+  }
+}
+
+@keyframes marqueeCloud1 {
+  0% {
+    background-position: -1190px;
+  }
+
+  100% {
+    background-position: 0;
+  }
+}
+@keyframes blink {
+  0% {
+    background-color: #ccc;
+  }
+  49% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
+  }
+}
+:root {
+  --blue: #084f8e;
+}
+
+.textBlue {
+  color: #2595ff;
+}
+
+.blueCharcol {
+  background-color: #262f36;
+}
+
+.cyanBlue {
+  background-color: #f4f5f6;
+}
+
+.blueGradient {
+  background: linear-gradient(#0071b1, #02aabb);
+}
+
+.blur {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.opacity {
+  opacity: 0.85;
+}
+
+.white {
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.padding {
+  padding: 0.4rem;
+}
+* {
+  font-size: 90%;
+}
+
+p {
+  font-size: 0.9375rem;
+  font-weight: lighter;
+}
+
+a {
+  text-decoration: none;
+  font-size: 0.9375rem !important;
+}
+.px-15{
+  font-size: 0.9375rem !important;
+}
+.navbar-toggler {
+  border: 1px solid white !important;
+}
+
+.home {
+  height: 100vh;
+  background-image: url(./images/sky.webp),
+    linear-gradient(0deg, #084f8e, #083466 80%), url(./images/sky.webp);
+  animation: marquee 50s infinite linear;
+}
+.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 2px;
+  animation: blink 1s infinite;
+}
+.moon {
+  border-radius: 50%;
+  width: 200px;
+  box-shadow: 0 0 80px rgb(255 255 255 / 60%);
+  animation-name: moon;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.clouds {
+  overflow: hidden;
+  width: 100%;
+  height: 120px;
+  bottom: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.cloud1 {
+  background-image: url(./images/clouds/cloud1.webp);
+  bottom: 50px;
+  animation: marqueeCloud1 40s infinite linear;
+}
+
+.cloud2 {
+  background-image: url(./images/clouds/cloud2.webp);
+  bottom: 20px;
+}
+
+.cloud3 {
+  background-image: url(./images/clouds/cloud3.webp);
+  bottom: 0px;
+  animation: marqueeCloud3 40s infinite linear;
+}
+
+.inTypingClub div h6 {
+  letter-spacing: 1px;
+}
+
+.banner {
+  background-color: var(--blue);
+}
+
+.font1 {
+  font-family: font1;
+}
+
+.font2 {
+  font-family: font2;
+  font-size: 14px;
+}
