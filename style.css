@@ -184,6 +184,7 @@ a {
 
 .home {
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   background-image: url(./images/sky.webp),
     linear-gradient(0deg, #084f8e, #083466 80%), url(./images/sky.webp);
   animation: marquee 50s infinite linear;

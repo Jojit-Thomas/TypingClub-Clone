@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Jojit Thomas">
-    <meta name="description" content="200 Days Challlenge to learn Coding | TypingClub-Clone | 3rd Project">
+    <meta name="author" content="Jojit Thomas" />
+    <meta
+      name="description"
+      content="200 Days Challlenge to learn Coding | TypingClub-Clone | 3rd Project"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,7 +17,11 @@
     />
     <script async src="https://cdn.splitbee.io/sb.js"></script>
     <title>Learn Touch Typing Free - TypingClub</title>
-    <link rel="shortcut icon" type="image/png" href="./images/Title-Image.png" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="./images/Title-Image.png"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
 
@@ -116,7 +123,10 @@
       >
         <img class="moon" src="./images/moon.webp" alt="Not Found" />
         <div class="typeWriter text-white text-start w-50">
-          <h1>Learn Touch Typing<span id="typing"></span> <span class="cursor">&nbsp;</span></h1>
+          <h1>
+            Learn Touch Typing<span id="typing"></span>
+            <span class="cursor">&nbsp;</span>
+          </h1>
           <a href="#">
             <button type="button" class="btn btn-light px-5 py-2 mt-4">
               Get Started
@@ -133,7 +143,7 @@
         <div class="col-sm-12 col-md-6">
           <div>
             <img
-              style="height: auto; width:400px"
+              style="height: auto; width: 400px"
               src="./images/typingclubImage.webp"
               class="img-fluid hidePicture"
               alt="Not Found"
@@ -143,9 +153,7 @@
 
         <div class="col-sm-12 col-md-6 pb-5">
           <h6 class="text-muted text-uppercase">What is TypingClub?</h6>
-          <h3>
-            TypingClub is the most effective way to learn how to type.
-          </h3>
+          <h3>TypingClub is the most effective way to learn how to type.</h3>
           <p class="lead m-b-md">
             It is web based and highly effective. TypingClub is (and will always
             be) free for both individuals and schools. There is an optional paid
@@ -684,7 +692,7 @@
       var i = 0;
       var txt = " For Free!";
       var speed = 50;
-        typeWriter();
+      typeWriter();
       function typeWriter() {
         if (i < txt.length) {
           document.getElementById("typing").innerHTML += txt.charAt(i);
@@ -692,6 +700,14 @@
           setTimeout(typeWriter, 300);
         }
       }
+    </script>
+    <script>
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty("--vh", `${vh}px`);
+      window.addEventListener("resize", () => {
+        let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty("--vh", `${vh}px`);
+      });
     </script>
   </body>
 </html>
